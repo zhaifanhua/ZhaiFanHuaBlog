@@ -13,9 +13,6 @@ jobs:
   deploy-gh-pages:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: /
 
     steps:
       - name: 拉取代码

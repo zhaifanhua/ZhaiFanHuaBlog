@@ -1,0 +1,473 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>摘繁华博客 - ZhaiFanhua's Blog</title><meta name="author" content="摘繁华"><meta name="copyright" content="摘繁华"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="白衣无尘，亦如初见。"><link rel="shortcut icon" href="/static/img/favicon.ico"><link rel="canonical" href="https://blog.zhaifanhua.com/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":800,"position":"bottom","messagePrev":"本文距离上次更新已经","messageNext":"天了，文章的内容可能已经过时，若内容或资源失效，请留言反馈。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":1000,"languages":{"author":"作者: 摘繁华","link":"链接: ","source":"来源: 摘繁华博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '摘繁华博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-11-14 04:54:21'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/static/css/modify.css"><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/rss.xml" title="摘繁华博客" type="application/rss+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/www/img/avatar/zhaifanhua.webp" onerror="onerror=null;src='null'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">48</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">34</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://tu.ltyuanfang.cn/api/fengjing.php')"><nav id="nav"><span id="blog-info"><a href="/" title="摘繁华博客"><span class="site-name">摘繁华博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">摘繁华博客</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/zhaifanhua" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://gitlab.com/zhaifanhua" target="_blank" title="Gitlab"><i class="fab fa-gitlab"></i></a><a class="social-icon" href="https://gitee.com/zhaifanhua" target="_blank" title="Gitee"><i class="fab fa-git"></i></a><a class="social-icon" href="https://blog.csdn.net/zhaifanhuablog" target="_blank" title="CSDN"><i class="fab fa-cuttlefish"></i></a><a class="social-icon" href="https://cnblogs.com/zhaifanhua" target="_blank" title="博客园"><i class="fab fa-blogger-b"></i></a><a class="social-icon" href="https://zhihu.com/people/zhaifanhua" target="_blank" title="知乎"><i class="fab fa-zhihu"></i></a><a class="social-icon" href="https://paypal.me/zhaifanhua" target="_blank" title="Paypal"><i class="fab fa-paypal"></i></a><a class="social-icon" href="mailto:zhaifanhua@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/rss.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover right"><a href="/2022/03/07/81dd1523f24f/" title="彻底的卸载干净oracle 11g"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202203071924697.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="彻底的卸载干净oracle 11g"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/07/81dd1523f24f/" title="彻底的卸载干净oracle 11g">彻底的卸载干净oracle 11g</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-07T10:14:05.000Z" title="发表于 2022-03-07 18:14:05">2022-03-07</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-06T16:15:05.000Z" title="更新于 2021-03-07 00:15:05">2021-03-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/oracle/">oracle</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2022/03/07/81dd1523f24f/#post-comment"><span class="valine-comment-count" data-xid="/2022/03/07/81dd1523f24f/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">彻底的卸载干净oracle 11g1.关闭oracle所有的服务。可以在windows的服务管理器中关闭；
+
+2.打开注册表：regedit 打开路径： &lt;找注册表 ：开始-&gt;运行-&gt;regedit&gt;  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\  删除该路径下的所有以oracle开始的服务名称，这个键是标识Oracle在windows下注册的各种服务。
+
+3.打开注册表，找到路径：  HKEY_LOCAL_MACHINE\SOFTWARE\ORACLE  删除该oracle目录，该目录下注册着Oracle数据库的软件安装信息。
+
+4.删除注册的oracle事件日志，打开注册表  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application  删除注册表的以oracle开头的所有项目。
+
+5.删除环境变量path中关于oracle的内容。  鼠标右键右单击“我的电脑–&gt;属性–&gt;高级–&gt;环境变量–& ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/09/30/0e2f883f982a/" title="CentOS上部署自己的DotNet项目"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202207230253805.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="CentOS上部署自己的DotNet项目"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/30/0e2f883f982a/" title="CentOS上部署自己的DotNet项目">CentOS上部署自己的DotNet项目</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-30T11:59:05.000Z" title="发表于 2021-09-30 19:59:05">2021-09-30</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-07-22T18:50:05.000Z" title="更新于 2022-07-23 02:50:05">2022-07-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/DotNet/">DotNet</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/CentOS/">CentOS</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/09/30/0e2f883f982a/#post-comment"><span class="valine-comment-count" data-xid="/2021/09/30/0e2f883f982a/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">CentOS上部署自己的DotNet项目1.查看环境
+这里我的服务器系统是Linux【CentOS Stream 9】，具体版本对应的安装包请【查看官网】,暂以CentOS Stream 9为例。
+
+通过以下命令查看系统版本
+1uname -a 
+
+
+2.安装 DotNet.NET 包含在 CentOS Stream 9 的 AppStream 存储库中。 但是，.NET Core 3.1 和 .NET 5 已从 CentOS Stream 9 中删除，因此应使用 .NET 6。 有关详细信息，请参阅博客文章在 CentOS Stream 9 中将 .NET 与 OpenSSL 结合使用 | Omair Majid。
+2.1.安装 SDK.NET SDK 使你可以通过 .NET 开发应用。 如果安装 .NET SDK，则无需安装相应的运行时。 若要安装 .NET SDK，请运行以下命令：
+1sudo dnf install dotnet-sdk-6.0
+
+2.2.安装运行时通过 ASP.NET Core 运行时，可以运行使用 .NET 开发且未提供运行时的应用。 以下命令将安装 ASP ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/09/02/0c008dd2a9ae/" title="Linux操作系统查看系统信息"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/static/img/banner/defult.jpg" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="Linux操作系统查看系统信息"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/02/0c008dd2a9ae/" title="Linux操作系统查看系统信息">Linux操作系统查看系统信息</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-02T10:14:05.000Z" title="发表于 2021-09-02 18:14:05">2021-09-02</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-09-02T10:15:05.000Z" title="更新于 2021-09-02 18:15:05">2021-09-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Linux/">Linux</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/09/02/0c008dd2a9ae/#post-comment"><span class="valine-comment-count" data-xid="/2021/09/02/0c008dd2a9ae/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">1、CPU信息Linux下的CPU信息全部都在&#x2F;proc&#x2F;cpuinfo这个文件中，可以直接打开看。
+总核数 &#x3D; 物理CPU个数 X 每颗物理CPU的核数总逻辑CPU数 &#x3D; 物理CPU个数 X 每颗物理CPU的核数 X 超线程数
+判断是否开启了超线程：如果多个逻辑CPU的”physical id”和”core id”均相同，说明开启了超线程或者换句话说：逻辑CPU个数 &gt; 物理CPU个数 * CPU内核数 开启了超线程逻辑CPU个数 &#x3D; 物理CPU个数 * CPU内核数 没有开启超线程
+（1）查看物理CPU的个数
+12345cat /proc/cpuinfo |grep &quot;physical id&quot;|sort |uniq|wc -l# 或grep &quot;physical id&quot; /proc/cpuinfo|sort -u# 或grep &#x27;physical id&#x27; /proc/cpuinfo | sort -u | wc –l
+
+（2）查看每个物理CPU中core的个数(即核数) ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/08/25/b8dcb6cb1c90/" title="Cloudreve的搭建"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202108181552967.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="Cloudreve的搭建"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/08/25/b8dcb6cb1c90/" title="Cloudreve的搭建">Cloudreve的搭建</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-08-25T06:14:05.000Z" title="发表于 2021-08-25 14:14:05">2021-08-25</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-08-25T07:15:05.000Z" title="更新于 2021-08-25 15:15:05">2021-08-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%BD%91%E7%9B%98/">网盘</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/08/25/b8dcb6cb1c90/#post-comment"><span class="valine-comment-count" data-xid="/2021/08/25/b8dcb6cb1c90/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">1.获取 Cloudreve你可以在 GitHub Release 页面获取已经构建打包完成的主程序。其中每个版本都提供了常见系统架构下可用的主程序，命名规则为cloudreve_版本号_操作系统_CPU架构.tar.gz 。比如，普通64位Linux系统上部署3.0.0版本，则应该下载cloudreve_3.0.0_linux_amd64.tar.gz。
+如果你想体验最新的功能特性，可以在 GitHub Actions 中下载每次 commit 后构建的开发版。注意，开发版并不稳定，无法用于生产用途，且不保证完全可用。获取 Cloudreve
+你可以在 GitHub Release 页面获取已经构建打包完成的主程序。其中每个版本都提供了常见系统架构下可用的主程序，命名规则为cloudreve_版本号_操作系统_CPU架构.tar.gz 。比如，普通64位Linux系统上部署3.0.0版本，则应该下载cloudreve_3.0.0_linux_amd64.tar.gz。
+如果你想体验最新的功能特性，可以在 GitHub Actions 中下载每次 commit 后构建的开发版。注意，开 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/08/18/99467d836556/" title="GitLab的安装与部署"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202108172337072.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="GitLab的安装与部署"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/08/18/99467d836556/" title="GitLab的安装与部署">GitLab的安装与部署</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-08-17T21:14:05.000Z" title="发表于 2021-08-18 05:14:05">2021-08-18</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-01-05T02:15:05.000Z" title="更新于 2022-01-05 10:15:05">2022-01-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/GitLab/">GitLab</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/08/18/99467d836556/#post-comment"><span class="valine-comment-count" data-xid="/2021/08/18/99467d836556/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">1.GitLab介绍1.1.GitLab：
+是一个基于Git实现的在线代码仓库托管软件，你可以用gitlab自己搭建一个类似于Github一样的系统，一般用于在企业、学校等内部网络搭建git私服。
+
+
+功能：Gitlab 是一个提供代码托管、提交审核和问题跟踪的代码管理平台。对于软件工程质量管理非常重要。
+版本：GitLab 分为社区版（CE） 和企业版（EE）。
+配置：建议CPU2核，内存2G以上。
+
+1.2.Gitlab的服务构成：
+Nginx：静态web服务器。
+gitlab-shell：用于处理Git命令和修改authorized keys列表。（Ruby）
+gitlab-workhorse: 轻量级的反向代理服务器。（go，GitLab Workhorse是一个敏捷的反向代理。它会处理一些大的HTTP请求，比如文件上传、文件下载、Git push&#x2F;pull和Git包下载。其它请求会反向代理到GitLab Rails应用，即反向代理给后端的unicorn。)
+logrotate：日志文件管理工具。
+postgresql：数据库。
+redis：缓存数据库。
+sideki ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/08/12/bdc030f44548/" title="最喜欢的一篇散文"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/static/img/banner/defult.jpg" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="最喜欢的一篇散文"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/08/12/bdc030f44548/" title="最喜欢的一篇散文">最喜欢的一篇散文</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-08-12T15:50:21.000Z" title="发表于 2021-08-12 23:50:21">2021-08-12</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-08-12T15:58:21.000Z" title="更新于 2021-08-12 23:58:21">2021-08-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%A3%E6%96%87/">散文</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%95%A3%E6%96%87/">散文</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/08/12/bdc030f44548/#post-comment"><span class="valine-comment-count" data-xid="/2021/08/12/bdc030f44548/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">最喜欢的一篇散文沉思望江楼(崔明秋)历史是那么的遥远，远得几乎无力去陈述。历史又仿佛就在眼前，与一块块青砖对视，黑色的瓦片间一棵小草缓缓地伸出手掌，举着生命的意象。风从双肩掠过，在我的耳畔低语着季节的万般柔情。多少年的冬去春来，多少年的隐忍与执着，多少年的寂寞与守望，历史在这里折断了嗓音，它仿佛就是巨大的磨盘研磨着灰色的时光。刻在墙上的文字在夕阳的余晖中目送着一个又一个日子悲壮地离去。那一横一竖、一撇一捺中隐藏了多少无常世事，吞咽了多少惆怅与苦涩。青山如黛，碧草如丝，江水在时间的磨砺中依旧保持着最初的纯真，向它该去的地方流去，不舍昼夜。任何的兴衰荣辱、时代变迁都似乎与它无关。愁肠百结的是这门窗紧闭、缄默不语的望江楼。爱情早已苍老无语，它在岸边站成一座城市的标记，在浩渺烟波中站成一个永不透露的承诺。它不需要被赞美，朴素得如苍穹永恒的淡蓝，或是古老长城那永远的深灰。它目睹了太多的悲欢离合，望着时光如落木萧萧而下，多少种命运，多少种凄凉，多少种无奈……阅尽沧桑，却依然无法让内心生出坚硬的老茧。文字记载的历史，是帝王将相的江山与权谋明争暗斗的喧嚣。对于一座古老建筑的探寻，人们争先恐后想要找到的 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/07/12/0f67388a472e/" title="SqlServer常用语句及函数"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/static/img/banner/defult.jpg" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="SqlServer常用语句及函数"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/12/0f67388a472e/" title="SqlServer常用语句及函数">SqlServer常用语句及函数</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-07-12T03:14:05.000Z" title="发表于 2021-07-12 11:14:05">2021-07-12</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-12-30T02:36:05.000Z" title="更新于 2021-12-30 10:36:05">2021-12-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/SqlServer/">SqlServer</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/SqlServer/">SqlServer</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/07/12/0f67388a472e/#post-comment"><span class="valine-comment-count" data-xid="/2021/07/12/0f67388a472e/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">一、SqlServer常用语句1、删除所有表1.1、删除所有表的外键约束（防止由于外键约束表删除失败）1234567891011121314DECLARE c1 cursor forselect &#x27;alter table [&#x27;+ object_name(parent_obj) + &#x27;] drop constraint [&#x27;+name+&#x27;]; &#x27;from sysobjectswhere xtype = &#x27;F&#x27;open c1declare @c1 varchar(8000)fetch next from c1 into @c1while(@@fetch_status=0)beginexec(@c1)fetch next from c1 into @c1endclose c1deallocate c1
+
+1.2、删除所有的存储过程1234567891011use 数据库名(是要删除表所在的那个数据库的名称)GOdeclare @sql varchar(8000)while (select count(*) fro ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/07/06/79b27c6a1631/" title="解决电脑不能复制移动删除文件夹的方法"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/20210706120403.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="解决电脑不能复制移动删除文件夹的方法"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/06/79b27c6a1631/" title="解决电脑不能复制移动删除文件夹的方法">解决电脑不能复制移动删除文件夹的方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-07-06T03:45:17.000Z" title="发表于 2021-07-06 11:45:17">2021-07-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-06T04:45:17.000Z" title="更新于 2021-07-06 12:45:17">2021-07-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%94%BB%E7%95%A5/">攻略</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%94%BB%E7%95%A5/">攻略</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/07/06/79b27c6a1631/#post-comment"><span class="valine-comment-count" data-xid="/2021/07/06/79b27c6a1631/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">
+有时候小伙伴们正在或刚使用过的文件夹或者某个文件，想要把它移动到其它的位置，或者删除它，又或者仅仅想重命名这个文件，但是在操作过程中，我们发现它弹出来了文件夹或者文件正在被使用，操作无法完成，怎么办呢？对于这种情况，我们可以使用多种方法来解决。具体是什么呢？
+
+解决方法找到占用文件或文件夹的进程，结束那个进程就可以了。具体为：
+【任务管理器】&gt;【性能】&gt;【打开资源监视器】&gt;【CPU】&gt;【关联的句柄】&gt;【输入文件夹地址】&gt;【结束进程】
+1、文件夹正在使用
+2、【Ctrl】+【Alt】+【Del】快捷键打开任务管理器
+3、点击性能选项卡选择打开资源管理器
+4、打开 CPU 选项卡
+5、将路径复制到【关键的句柄】，右键【结束进程】
+
+
+如果你觉得这篇文章还不错，请动动小指头点赞、收藏和关注哦！若本文带给你很大帮助，也可以打赏博主一杯可乐​​ღゝ◡╹)ノ♡摘繁华版权所有，转发或引用请附上原文链接哦！
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/06/19/1adfa4983617/" title="通用.NET数据库访问类SqlHelper"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/static/img/banner/defult.jpg" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="通用.NET数据库访问类SqlHelper"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/06/19/1adfa4983617/" title="通用.NET数据库访问类SqlHelper">通用.NET数据库访问类SqlHelper</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-18T20:04:17.000Z" title="发表于 2021-06-19 04:04:17">2021-06-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-19T08:26:17.000Z" title="更新于 2021-06-19 16:26:17">2021-06-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/CSharp/">CSharp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/CSharp/">CSharp</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/NET/">.NET</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/06/19/1adfa4983617/#post-comment"><span class="valine-comment-count" data-xid="/2021/06/19/1adfa4983617/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">通用.NET数据库访问类SqlHelper12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210310410510610710810911011111211311411511611711811912012112212312412512612712812913013113213313413513613713813914014114214314414514614714814915015115215315415515615715815916016116216316416516616716816917017117217317417517617717817918018118218318418518618718818919019119219319419519 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/06/12/488d33cd9c1d/" title="常用端口及范围"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/static/img/banner/defult.jpg" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="常用端口及范围"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/06/12/488d33cd9c1d/" title="常用端口及范围">常用端口及范围</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-11T21:37:26.000Z" title="发表于 2021-06-12 05:37:26">2021-06-12</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-11T22:37:26.000Z" title="更新于 2021-06-12 06:37:26">2021-06-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">基础知识</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">基础知识</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/06/12/488d33cd9c1d/#post-comment"><span class="valine-comment-count" data-xid="/2021/06/12/488d33cd9c1d/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">端口范围一般用到的是1到65535，其中0一般不使用。端口号可分为3大类：1、公认端口（Well Known Ports）：从0到1023，它们紧密绑定（binding）于一些服务。通常这些端口的通讯明确表明了某种服务的协议。例如：80端口实际上总是HTTP通讯。2、注册端口（Registered Ports）：从1024到49151。它们松散地绑定于一些服务。也就是说有许多服务绑定于这些端口，这些端口同样用于许多其它目的。例如：许多系统处理动态端口从1024左右开始。3、动态和&#x2F;或私有端口（Dynamic and&#x2F;or Private Ports）：从49152到65535。理论上，不应为服务分配这些端口。实际上，机器通常从1024起分配动态端口。但也有例外：SUN的RPC端口从32768开始。
+常用版21：FTP服务所开放的端口，用于上传、下载文件。22：SSH端口，用于通过命令行模式远程连接Linux服务器或vps。23：Telnet端口，用于Telnet远程登录服务器。25：SMTP服务所开放的端口，用于发送邮件。80：HTTP用于HTTP服务提供访问功能， ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/06/11/c18403ff18df/" title="MySQL开启远程连接"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/static/img/banner/defult.jpg" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="MySQL开启远程连接"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/06/11/c18403ff18df/" title="MySQL开启远程连接">MySQL开启远程连接</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-11T10:14:05.000Z" title="发表于 2021-06-11 18:14:05">2021-06-11</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-11T16:15:05.000Z" title="更新于 2021-06-12 00:15:05">2021-06-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/MySQL/">MySQL</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/MySQL/">MySQL</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/06/11/c18403ff18df/#post-comment"><span class="valine-comment-count" data-xid="/2021/06/11/c18403ff18df/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">MySQL开启远程连接在Linux上面装完MySQL 或 MariaDB，远程登录报错 Host is not allowed to connect to this MySQL server,是因为没有开启远程登陆。解决方法如下：
+1、在装有MySQL的机器上登录MySQL；
+1mysql -u root -p你的密码
+
+2、执行下面命令；
+1use mysql;
+
+3、执行下面命令，执行完可能会报错，不用管它。
+1update user set host = &#x27;%&#x27; where user = &#x27;root&#x27;;
+
+4、继续执行命令，来刷新MySQL的权限相关表；
+1FLUSH PRIVILEGES;
+
+
+经过上面4步，就可以解决这个问题了。
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/06/11/f22b941b630b/" title=".NET面试题"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/20210611235021.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt=".NET面试题"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/06/11/f22b941b630b/" title=".NET面试题">.NET面试题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-11T10:14:05.000Z" title="发表于 2021-06-11 18:14:05">2021-06-11</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-11T16:15:05.000Z" title="更新于 2021-06-12 00:15:05">2021-06-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/CSharp/">CSharp</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/NET/">.NET</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/06/11/f22b941b630b/#post-comment"><span class="valine-comment-count" data-xid="/2021/06/11/f22b941b630b/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">.NET面试题
+这里总结收集.NET面试题。
+
+
+CSharp暂无
+SQL Server1、写出一条 SQL 语句：取出文章表（article）中第 31 到第 40 记录（SQL Server，以自动增长的 id 作为主键，注意：id 可能不是连续的。）
+12345SELECT * FROM(    SELECT id, ROW_NUMBER() OVER(ORDER BY id ASC) AS rowid    FROM article) TWHERE T.rowid BETWEEN 31 and 40 
+
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/05/13/6374d63a8d8d/" title="解决网页文字不能复制的方法"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/20210513234151.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="解决网页文字不能复制的方法"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/13/6374d63a8d8d/" title="解决网页文字不能复制的方法">解决网页文字不能复制的方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-12T20:04:17.000Z" title="发表于 2021-05-13 04:04:17">2021-05-13</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-05-13T08:26:17.000Z" title="更新于 2021-05-13 16:26:17">2021-05-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/05/13/6374d63a8d8d/#post-comment"><span class="valine-comment-count" data-xid="/2021/05/13/6374d63a8d8d/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">网页文字不能复制的方法解决网页文字不能复制的方法
+网页文字不能复制基本都是通过Javascript脚本来实现的，Chrome、Firefox浏览器都有禁用Javascript功能，所以我们只要禁用当前页面Javascript即可破解网页文字不能复制的问题。
+
+1、禁用javascript浏览器按F12再按F1打开Settings界面，钩选”Disable Javascript”即可：
+
+
+上述方法在大部分情况下都适用的，但是，有时用了后页面内容会消失，提示”Please enable Javascript to continue”，此时就需要另一种方法了。
+
+2、书签法在浏览器新建书签，名称填写”解除网页限制”，网址填写下边代码:
+1javascript:(function()&#123;var _0x6d08=[&quot;\x38\x20\x31\x3D\x66\x3B\x38\x20\x30\x3D\x31\x2E\x30\x3B\x30\x2E\x39\x3D\x30\x2E\x67\x3D\x30\x2E\x68\x3D\x30\x2E\x69\x3D\x30\x2E\x6A ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/05/11/b147934d616b/" title="用ZFile搭建公共在线网盘"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/20210612042510.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="用ZFile搭建公共在线网盘"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/11/b147934d616b/" title="用ZFile搭建公共在线网盘">用ZFile搭建公共在线网盘</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-11T10:14:05.000Z" title="发表于 2021-05-11 18:14:05">2021-05-11</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-05-11T16:15:05.000Z" title="更新于 2021-05-12 00:15:05">2021-05-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%BD%91%E7%9B%98/">网盘</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/05/11/b147934d616b/#post-comment"><span class="valine-comment-count" data-xid="/2021/05/11/b147934d616b/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">注：本文只用于个人使用教程，基本转载原作者文档配图以便后续更换服务器时配置，原文档地址: http://docs.zhaojun.im/zfile 。
+环境配置安装依赖
+下载 java 环境。
+
+12# CentOS系统yum install -y java-1.8.0-openjdk unzip
+
+
+下载项目
+这里我将文件下载到了 &#x2F;home&#x2F;www 下，并在该文件夹下创建了 pan 这个文件夹，并为此文件夹赋予操作权限
+
+12345cd ~wget -P /home/www https://c.jun6.net/ZFILE/zfile-release.warcd /home/wwwmkdir pan &amp;&amp; unzip zfile-release.war -d pan &amp;&amp; rm -rf zfile-release.warchmod +x /home/www/pan/bin/*.sh
+
+
+……
+
+常用命令123/home/www/pan/bin/start.sh       # 启动项目/home/www/pan/bin/stop. ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/03/15/84da83f19eca/" title="在CentOS上安装Nginx配置HTTPS并设置系统服务和开机启动（最全教程）"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/20210413034336.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="在CentOS上安装Nginx配置HTTPS并设置系统服务和开机启动（最全教程）"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/03/15/84da83f19eca/" title="在CentOS上安装Nginx配置HTTPS并设置系统服务和开机启动（最全教程）">在CentOS上安装Nginx配置HTTPS并设置系统服务和开机启动（最全教程）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-14T20:04:17.000Z" title="发表于 2021-03-15 04:04:17">2021-03-15</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-18T08:26:17.000Z" title="更新于 2021-03-18 16:26:17">2021-03-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/CentOS/">CentOS</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Linux/">Linux</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Nginx/">Nginx</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/HTTPS/">HTTPS</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2021/03/15/84da83f19eca/#post-comment"><span class="valine-comment-count" data-xid="/2021/03/15/84da83f19eca/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">
+友情提示：全部配完大约需要20分钟，系统为腾讯云CentOS7.5，本教程配合 xshell 和 xftp 使用更佳。本教程 摘繁华 版权所有。
+
+操作按键常用按键编辑器vim按键复制操作：Shift+Ins 开启编辑：  i  或者  Insert  
+退出编辑：  Esc  
+退出vim： : + q  
+保存vim： : + w 
+保存退出vim： :  + w  + q  
+不保存退出vim： :  + q + !  
+
+第一步：安装所需要的依赖1、所需要的依赖包括：gcc，pcre，zlib，openssl。1yum -y install gcc gcc-c++ pcre pcre-devel zlib zlib-devel openssl openssl-devel
+
+GCC库PCRE库ZLIB库OpenSSL库GCC库（用来编译下载下来的 nginx 源码）
+GCC  是 Linux 下最主要的编译工具，GCC 不仅功能非常强大，结构也非常灵活。它可以通过不同的前端模块来支持各种语言，如 Java、Fortran、Pascal、Modula-3 和 Ada。PCRE库（ ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="page-number" href="/page/4/#content-inner">4</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/www/img/avatar/zhaifanhua.webp" onerror="this.onerror=null;this.src='/null'" alt="avatar"/></div><div class="author-info__name">摘繁华</div><div class="author-info__description">白衣无尘，亦如初见。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">48</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">34</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.zhaifanhua.com"><i class="fas fa-home"></i><span>摘繁华官方主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zhaifanhua" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://gitlab.com/zhaifanhua" target="_blank" title="Gitlab"><i class="fab fa-gitlab"></i></a><a class="social-icon" href="https://gitee.com/zhaifanhua" target="_blank" title="Gitee"><i class="fab fa-git"></i></a><a class="social-icon" href="https://blog.csdn.net/zhaifanhuablog" target="_blank" title="CSDN"><i class="fab fa-cuttlefish"></i></a><a class="social-icon" href="https://cnblogs.com/zhaifanhua" target="_blank" title="博客园"><i class="fab fa-blogger-b"></i></a><a class="social-icon" href="https://zhihu.com/people/zhaifanhua" target="_blank" title="知乎"><i class="fab fa-zhihu"></i></a><a class="social-icon" href="https://paypal.me/zhaifanhua" target="_blank" title="Paypal"><i class="fab fa-paypal"></i></a><a class="social-icon" href="mailto:zhaifanhua@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/rss.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这里摘繁华，欢迎关注我的博客。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/08/18/6f8a2d7c06a5/" title="Vue学习笔记4-项目开发规范及插件"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202209160000048.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="Vue学习笔记4-项目开发规范及插件"/></a><div class="content"><a class="title" href="/2023/08/18/6f8a2d7c06a5/" title="Vue学习笔记4-项目开发规范及插件">Vue学习笔记4-项目开发规范及插件</a><time datetime="2023-08-17T17:57:15.000Z" title="发表于 2023-08-18 01:57:15">2023-08-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/06/ece9fca3a62c/" title="如何在CentOS上安装.Net环境"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202303062249474.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="如何在CentOS上安装.Net环境"/></a><div class="content"><a class="title" href="/2023/03/06/ece9fca3a62c/" title="如何在CentOS上安装.Net环境">如何在CentOS上安装.Net环境</a><time datetime="2023-03-06T14:47:48.000Z" title="发表于 2023-03-06 22:47:48">2023-03-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/30/199e220c7b2c/" title="用acme.sh自动部署域名证书"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202211300049395.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="用acme.sh自动部署域名证书"/></a><div class="content"><a class="title" href="/2022/11/30/199e220c7b2c/" title="用acme.sh自动部署域名证书">用acme.sh自动部署域名证书</a><time datetime="2022-11-29T16:54:08.000Z" title="发表于 2022-11-30 00:54:08">2022-11-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/30/ba087fd5c740/" title="编辑器常用正则表达式"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202211290634219.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="编辑器常用正则表达式"/></a><div class="content"><a class="title" href="/2022/11/30/ba087fd5c740/" title="编辑器常用正则表达式">编辑器常用正则表达式</a><time datetime="2022-11-29T16:52:08.000Z" title="发表于 2022-11-30 00:52:08">2022-11-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/22/31129743390b/" title="如何在 CentOS 9 Stream 上安装 MariaDB"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202207230212968.png" onerror="this.onerror=null;this.src='/static/img/loading.gif'" alt="如何在 CentOS 9 Stream 上安装 MariaDB"/></a><div class="content"><a class="title" href="/2022/07/22/31129743390b/" title="如何在 CentOS 9 Stream 上安装 MariaDB">如何在 CentOS 9 Stream 上安装 MariaDB</a><time datetime="2022-07-22T14:26:05.000Z" title="发表于 2022-07-22 22:26:05">2022-07-22</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/CSharp/"><span class="card-category-list-name">CSharp</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/MySQL/"><span class="card-category-list-name">MySQL</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/"><span class="card-category-list-name">Python</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/SqlServer/"><span class="card-category-list-name">SqlServer</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Vue/"><span class="card-category-list-name">Vue</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"><span class="card-category-list-name">基础知识</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%94%BB%E7%95%A5/"><span class="card-category-list-name">攻略</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">教程</span><span class="card-category-list-count">14</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Hello-World/" style="font-size: 1.15em; color: rgb(26, 44, 161)">Hello World</a><a href="/tags/%E8%AF%97%E8%AF%8D/" style="font-size: 1.45em; color: rgb(59, 125, 101)">诗词</a><a href="/tags/%E8%A7%82%E5%90%8E%E6%84%9F/" style="font-size: 1.15em; color: rgb(8, 58, 163)">观后感</a><a href="/tags/%E6%95%A3%E6%96%87/" style="font-size: 1.27em; color: rgb(96, 109, 151)">散文</a><a href="/tags/MySQL/" style="font-size: 1.15em; color: rgb(19, 151, 183)">MySQL</a><a href="/tags/%E6%B1%89%E5%8C%96/" style="font-size: 1.15em; color: rgb(47, 140, 40)">汉化</a><a href="/tags/PowerDesigner/" style="font-size: 1.15em; color: rgb(158, 185, 109)">PowerDesigner</a><a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.27em; color: rgb(11, 12, 69)">教程</a><a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.15em; color: rgb(91, 79, 121)">数据库</a><a href="/tags/SqlServer/" style="font-size: 1.15em; color: rgb(34, 162, 128)">SqlServer</a><a href="/tags/oracle/" style="font-size: 1.15em; color: rgb(106, 19, 115)">oracle</a><a href="/tags/U8-WMS/" style="font-size: 1.15em; color: rgb(164, 151, 138)">U8,WMS</a><a href="/tags/VisualStudio/" style="font-size: 1.15em; color: rgb(72, 157, 142)">VisualStudio</a><a href="/tags/CSharp/" style="font-size: 1.39em; color: rgb(59, 96, 76)">CSharp</a><a href="/tags/DotNet/" style="font-size: 1.27em; color: rgb(167, 59, 74)">DotNet</a><a href="/tags/CentOS/" style="font-size: 1.27em; color: rgb(69, 18, 84)">CentOS</a><a href="/tags/git/" style="font-size: 1.15em; color: rgb(157, 155, 74)">git</a><a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 1.15em; color: rgb(131, 42, 11)">服务器</a><a href="/tags/%E7%BD%91%E7%9B%98/" style="font-size: 1.21em; color: rgb(64, 193, 49)">网盘</a><a href="/tags/NET/" style="font-size: 1.27em; color: rgb(200, 44, 6)">.NET</a><a href="/tags/GitLab/" style="font-size: 1.15em; color: rgb(153, 163, 6)">GitLab</a><a href="/tags/Linux/" style="font-size: 1.27em; color: rgb(88, 39, 18)">Linux</a><a href="/tags/Nginx/" style="font-size: 1.21em; color: rgb(30, 165, 127)">Nginx</a><a href="/tags/HTTPS/" style="font-size: 1.15em; color: rgb(17, 29, 3)">HTTPS</a><a href="/tags/MariaDB/" style="font-size: 1.15em; color: rgb(195, 58, 125)">MariaDB</a><a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 1.21em; color: rgb(177, 67, 130)">基础知识</a><a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 1.15em; color: rgb(18, 170, 173)">面试题</a><a href="/tags/%E5%9F%9F%E5%90%8D/" style="font-size: 1.21em; color: rgb(134, 158, 74)">域名</a><a href="/tags/%E7%BC%96%E8%BE%91%E5%99%A8/" style="font-size: 1.15em; color: rgb(141, 191, 184)">编辑器</a><a href="/tags/Python/" style="font-size: 1.21em; color: rgb(136, 112, 184)">Python</a><a href="/tags/%E6%94%BB%E7%95%A5/" style="font-size: 1.15em; color: rgb(22, 157, 190)">攻略</a><a href="/tags/Jupyter/" style="font-size: 1.15em; color: rgb(7, 179, 95)">Jupyter</a><a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" style="font-size: 1.15em; color: rgb(46, 170, 194)">数据分析</a><a href="/tags/Vue/" style="font-size: 1.33em; color: rgb(196, 91, 152)">Vue</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">2023年08月</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">2023年03月</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">2022年11月</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">2022年07月</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">2022年06月</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">2022年05月</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">2022年04月</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/03/"><span class="card-archive-list-date">2022年03月</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">48</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2016-02-25T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">91.2k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-11-13T20:54:20.611Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2016 - 2023 By 摘繁华</div><div class="footer_custom_text"><a href="/sitemap.xml">网站地图</a><span>|</span><a href="/baidusitemap.xml">百度网站地图</a><span>|</span><a target="_blank" rel="noopener" href="https://comment.blog.zhaifanhua.com">评论管理</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  function loadValine () {
+    function initValine () {
+      let initData = {
+        el: '#vcomment',
+        appId: 'hQY3X0Ik2ttryFeUGIkNjwLx-gzGzoHsz',
+        appKey: 'jMrMqV3NplwCUmFopw1S2VAU',
+        serverURLs: ''
+      }
+      
+      const valine = new Valine(initData)
+    }
+
+    if (typeof Valine === 'function') initValine() 
+    else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+  }
+
+  window.pjax ? loadValine() : window.addEventListener('load', loadValine)
+})()</script><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        const from = '出自 ' + data.from
+        const sub = "白衣无尘，亦如初见。陇右人士，喜古风与汉服。 相互珍重，各自安好。"
+        sub.unshift(data.hitokoto, from)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').textContent = data.hitokoto
+      }
+    })
+}
+typedJSFn.run(subtitleType)
+</script><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? '' : ''
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><meting-js server="netease" type="playlist" id="6882882037" fixed="true" autoplay="true" loop="all" order="random" preload="auto"> </meting-js><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>摘繁华博客</title>
+    <link>https://blog.zhaifanhua.com/</link>
+    
+    <atom:link href="https://blog.zhaifanhua.com/rss.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>白衣无尘，亦如初见。</description>
+    <pubDate>Thu, 17 Aug 2023 18:13:58 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Vue学习笔记4-项目开发规范及插件</title>
+      <link>https://blog.zhaifanhua.com/2023/08/18/6f8a2d7c06a5/</link>
+      <guid>https://blog.zhaifanhua.com/2023/08/18/6f8a2d7c06a5/</guid>
+      <pubDate>Thu, 17 Aug 2023 17:57:15 GMT</pubDate>
+      
+      <description>这里对开发规范的配置仅配置ESLint，对代码格式的配置仅配置Prettier，用于代码格式化。</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/Vue/">Vue</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/Vue/">Vue</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2023/08/18/6f8a2d7c06a5/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>如何在CentOS上安装.Net环境</title>
+      <link>https://blog.zhaifanhua.com/2023/03/06/ece9fca3a62c/</link>
+      <guid>https://blog.zhaifanhua.com/2023/03/06/ece9fca3a62c/</guid>
+      <pubDate>Mon, 06 Mar 2023 14:47:48 GMT</pubDate>
+      
+      <description>如何在CentOS上安装.Net环境</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/CSharp/">CSharp</category>
+      
+      <category domain="https://blog.zhaifanhua.com/tags/DotNet/">DotNet</category>
+      
+      <category domain="https://blog.zhaifanhua.com/tags/CentOS/">CentOS</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2023/03/06/ece9fca3a62c/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>用acme.sh自动部署域名证书</title>
+      <link>https://blog.zhaifanhua.com/2022/11/30/199e220c7b2c/</link>
+      <guid>https://blog.zhaifanhua.com/2022/11/30/199e220c7b2c/</guid>
+      <pubDate>Tue, 29 Nov 2022 16:54:08 GMT</pubDate>
+      
+      <description>用acme.sh自动部署域名证书</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/Nginx/">Nginx</category>
+      
+      <category domain="https://blog.zhaifanhua.com/tags/%E5%9F%9F%E5%90%8D/">域名</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/11/30/199e220c7b2c/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>编辑器常用正则表达式</title>
+      <link>https://blog.zhaifanhua.com/2022/11/30/ba087fd5c740/</link>
+      <guid>https://blog.zhaifanhua.com/2022/11/30/ba087fd5c740/</guid>
+      <pubDate>Tue, 29 Nov 2022 16:52:08 GMT</pubDate>
+      
+      <description>常用正则表达式</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/%E7%BC%96%E8%BE%91%E5%99%A8/">编辑器</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/11/30/ba087fd5c740/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>如何在 CentOS 9 Stream 上安装 MariaDB</title>
+      <link>https://blog.zhaifanhua.com/2022/07/22/31129743390b/</link>
+      <guid>https://blog.zhaifanhua.com/2022/07/22/31129743390b/</guid>
+      <pubDate>Fri, 22 Jul 2022 14:26:05 GMT</pubDate>
+      
+      <description>如何在 CentOS 9 Stream 上安装 MariaDB</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/Linux/">Linux</category>
+      
+      <category domain="https://blog.zhaifanhua.com/tags/MariaDB/">MariaDB</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/07/22/31129743390b/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>《苹果》影评观后感</title>
+      <link>https://blog.zhaifanhua.com/2022/06/22/7898d567165f/</link>
+      <guid>https://blog.zhaifanhua.com/2022/06/22/7898d567165f/</guid>
+      <pubDate>Tue, 21 Jun 2022 19:40:25 GMT</pubDate>
+      
+      <description>《苹果》影评观后感</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E8%A7%82%E5%90%8E%E6%84%9F/">观后感</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/%E8%A7%82%E5%90%8E%E6%84%9F/">观后感</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/06/22/7898d567165f/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Vue学习笔记3-使用Vite安装项目</title>
+      <link>https://blog.zhaifanhua.com/2022/06/12/e5227a9caa42/</link>
+      <guid>https://blog.zhaifanhua.com/2022/06/12/e5227a9caa42/</guid>
+      <pubDate>Sun, 12 Jun 2022 12:49:15 GMT</pubDate>
+      
+      <description>Vite是一个 web 开发构建工具，由于其原生 ES 模块导入方式，可以实现闪电般的冷服务器启动。</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/Vue/">Vue</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/Vue/">Vue</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/06/12/e5227a9caa42/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>HTTP状态码大全</title>
+      <link>https://blog.zhaifanhua.com/2022/06/12/cd45c2185b83/</link>
+      <guid>https://blog.zhaifanhua.com/2022/06/12/cd45c2185b83/</guid>
+      <pubDate>Sat, 11 Jun 2022 17:18:26 GMT</pubDate>
+      
+      <description>常见 HttpStatusCode 含义查询</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">基础知识</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">基础知识</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/06/12/cd45c2185b83/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Vue学习笔记2-安装Vue</title>
+      <link>https://blog.zhaifanhua.com/2022/06/10/0e04a70f7d80/</link>
+      <guid>https://blog.zhaifanhua.com/2022/06/10/0e04a70f7d80/</guid>
+      <pubDate>Fri, 10 Jun 2022 13:19:05 GMT</pubDate>
+      
+      <description>Vue.js 设计的初衷就包括可以被渐进式地采用。这意味着它可以根据需求以多种方式集成到一个项目中。</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/Vue/">Vue</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/Vue/">Vue</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/06/10/0e04a70f7d80/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>SQL游标(cursor)详细说明及内部循环使用示例</title>
+      <link>https://blog.zhaifanhua.com/2022/06/10/6956045530ec/</link>
+      <guid>https://blog.zhaifanhua.com/2022/06/10/6956045530ec/</guid>
+      <pubDate>Fri, 10 Jun 2022 11:59:05 GMT</pubDate>
+      
+      <description>SQL游标(cursor)详细说明及内部循环使用示例</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/06/10/6956045530ec/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Vue学习笔记1-什么是Vue</title>
+      <link>https://blog.zhaifanhua.com/2022/06/08/a0cecaa2c8d3/</link>
+      <guid>https://blog.zhaifanhua.com/2022/06/08/a0cecaa2c8d3/</guid>
+      <pubDate>Wed, 08 Jun 2022 14:39:05 GMT</pubDate>
+      
+      <description>渐进式 JavaScript 框架，一款用于构建 Web 界面，易学易用，性能出色且功能丰富的框架。</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/Vue/">Vue</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/Vue/">Vue</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/06/08/a0cecaa2c8d3/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>U8数据库同步至WMS数据库语句</title>
+      <link>https://blog.zhaifanhua.com/2022/05/06/f112cbccbc0b/</link>
+      <guid>https://blog.zhaifanhua.com/2022/05/06/f112cbccbc0b/</guid>
+      <pubDate>Fri, 06 May 2022 14:39:05 GMT</pubDate>
+      
+      <description>U8数据库同步至WMS数据库语句</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/U8-WMS/">U8,WMS</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/05/06/f112cbccbc0b/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>用C#实现模拟双色球中奖控制台应用程序</title>
+      <link>https://blog.zhaifanhua.com/2022/05/02/a5f8190eedc3/</link>
+      <guid>https://blog.zhaifanhua.com/2022/05/02/a5f8190eedc3/</guid>
+      <pubDate>Mon, 02 May 2022 06:04:17 GMT</pubDate>
+      
+      <description>用C#实现模拟双色球中奖控制台应用程序</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/CSharp/">CSharp</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/CSharp/">CSharp</category>
+      
+      <category domain="https://blog.zhaifanhua.com/tags/NET/">.NET</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/05/02/a5f8190eedc3/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>本地git仓库提交代码到远程git仓库</title>
+      <link>https://blog.zhaifanhua.com/2022/04/25/33d92f78cfa9/</link>
+      <guid>https://blog.zhaifanhua.com/2022/04/25/33d92f78cfa9/</guid>
+      <pubDate>Mon, 25 Apr 2022 03:14:05 GMT</pubDate>
+      
+      <description>本地git仓库提交代码到远程git仓库</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/git/">git</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/04/25/33d92f78cfa9/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>为VisualStudio新建文件创建版权日期模板</title>
+      <link>https://blog.zhaifanhua.com/2022/04/15/1670a3964288/</link>
+      <guid>https://blog.zhaifanhua.com/2022/04/15/1670a3964288/</guid>
+      <pubDate>Thu, 14 Apr 2022 17:43:05 GMT</pubDate>
+      
+      <description>为VisualStudio新建文件创建版权日期模板</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/VisualStudio/">VisualStudio</category>
+      
+      <category domain="https://blog.zhaifanhua.com/tags/CSharp/">CSharp</category>
+      
+      <category domain="https://blog.zhaifanhua.com/tags/DotNet/">DotNet</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/04/15/1670a3964288/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>彻底的卸载干净oracle 11g</title>
+      <link>https://blog.zhaifanhua.com/2022/03/07/81dd1523f24f/</link>
+      <guid>https://blog.zhaifanhua.com/2022/03/07/81dd1523f24f/</guid>
+      <pubDate>Mon, 07 Mar 2022 10:14:05 GMT</pubDate>
+      
+      <description>彻底的卸载干净oracle 11g</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/oracle/">oracle</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2022/03/07/81dd1523f24f/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>CentOS上部署自己的DotNet项目</title>
+      <link>https://blog.zhaifanhua.com/2021/09/30/0e2f883f982a/</link>
+      <guid>https://blog.zhaifanhua.com/2021/09/30/0e2f883f982a/</guid>
+      <pubDate>Thu, 30 Sep 2021 11:59:05 GMT</pubDate>
+      
+      <description>CentOS上部署自己的DotNet项目</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/DotNet/">DotNet</category>
+      
+      <category domain="https://blog.zhaifanhua.com/tags/CentOS/">CentOS</category>
+      
+      <category domain="https://blog.zhaifanhua.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2021/09/30/0e2f883f982a/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Linux操作系统查看系统信息</title>
+      <link>https://blog.zhaifanhua.com/2021/09/02/0c008dd2a9ae/</link>
+      <guid>https://blog.zhaifanhua.com/2021/09/02/0c008dd2a9ae/</guid>
+      <pubDate>Thu, 02 Sep 2021 10:14:05 GMT</pubDate>
+      
+      <description>Linux操作系统查看系统信息</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/Linux/">Linux</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2021/09/02/0c008dd2a9ae/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Cloudreve的搭建</title>
+      <link>https://blog.zhaifanhua.com/2021/08/25/b8dcb6cb1c90/</link>
+      <guid>https://blog.zhaifanhua.com/2021/08/25/b8dcb6cb1c90/</guid>
+      <pubDate>Wed, 25 Aug 2021 06:14:05 GMT</pubDate>
+      
+      <description>Cloudreve的搭建</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/%E7%BD%91%E7%9B%98/">网盘</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2021/08/25/b8dcb6cb1c90/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>GitLab的安装与部署</title>
+      <link>https://blog.zhaifanhua.com/2021/08/18/99467d836556/</link>
+      <guid>https://blog.zhaifanhua.com/2021/08/18/99467d836556/</guid>
+      <pubDate>Tue, 17 Aug 2021 21:14:05 GMT</pubDate>
+      
+      <description>GitLab的安装与部署</description>
+      
+      
+      
+      
+      <category domain="https://blog.zhaifanhua.com/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://blog.zhaifanhua.com/tags/GitLab/">GitLab</category>
+      
+      
+      <comments>https://blog.zhaifanhua.com/2021/08/18/99467d836556/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>

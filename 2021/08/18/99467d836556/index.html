@@ -1,0 +1,395 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>GitLab的安装与部署 | 摘繁华博客</title><meta name="author" content="摘繁华"><meta name="copyright" content="摘繁华"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="GitLab的安装与部署"><link rel="shortcut icon" href="/static/img/favicon.ico"><link rel="canonical" href="https://blog.zhaifanhua.com/2021/08/18/99467d836556/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":800,"position":"bottom","messagePrev":"本文距离上次更新已经","messageNext":"天了，文章的内容可能已经过时，若内容或资源失效，请留言反馈。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":1000,"languages":{"author":"作者: 摘繁华","link":"链接: ","source":"来源: 摘繁华博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'GitLab的安装与部署',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-01-05 10:15:05'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/static/css/modify.css"><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/rss.xml" title="摘繁华博客" type="application/rss+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/www/img/avatar/zhaifanhua.webp" onerror="onerror=null;src='null'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">48</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">34</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.zhaifanhua.com/blog/img/202108172337072.png')"><nav id="nav"><span id="blog-info"><a href="/" title="摘繁华博客"><span class="site-name">摘繁华博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">GitLab的安装与部署</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-08-17T21:14:05.000Z" title="发表于 2021-08-18 05:14:05">2021-08-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-01-05T02:15:05.000Z" title="更新于 2022-01-05 10:15:05">2022-01-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="GitLab的安装与部署"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="1-GitLab介绍"><a href="#1-GitLab介绍" class="headerlink" title="1.GitLab介绍"></a>1.GitLab介绍</h2><h4 id="1-1-GitLab："><a href="#1-1-GitLab：" class="headerlink" title="1.1.GitLab："></a>1.1.GitLab：</h4><blockquote>
+<p>是一个基于Git实现的在线代码仓库托管软件，你可以用gitlab自己搭建一个类似于Github一样的系统，一般用于在企业、学校等内部网络搭建git私服。</p>
+</blockquote>
+<ul>
+<li>功能：Gitlab 是一个提供代码托管、提交审核和问题跟踪的代码管理平台。对于软件工程质量管理非常重要。</li>
+<li>版本：GitLab 分为社区版（CE） 和企业版（EE）。</li>
+<li>配置：建议CPU2核，内存2G以上。</li>
+</ul>
+<h4 id="1-2-Gitlab的服务构成："><a href="#1-2-Gitlab的服务构成：" class="headerlink" title="1.2.Gitlab的服务构成："></a>1.2.Gitlab的服务构成：</h4><ul>
+<li>Nginx：静态web服务器。</li>
+<li>gitlab-shell：用于处理Git命令和修改authorized keys列表。（Ruby）</li>
+<li>gitlab-workhorse: 轻量级的反向代理服务器。（go，GitLab Workhorse是一个敏捷的反向代理。它会处理一些大的HTTP请求，比如文件上传、文件下载、Git push&#x2F;pull和Git包下载。其它请求会反向代理到GitLab Rails应用，即反向代理给后端的unicorn。)</li>
+<li>logrotate：日志文件管理工具。</li>
+<li>postgresql：数据库。</li>
+<li>redis：缓存数据库。</li>
+<li>sidekiq：用于在后台执行队列任务（异步执行）。（Ruby）</li>
+<li>unicorn：An HTTP server for Rack applications，GitLab Rails应用是托管在这个服务器上面的。（Ruby Web Server,主要使用Ruby编写）</li>
+</ul>
+<h2 id="2-GitLab安装"><a href="#2-GitLab安装" class="headerlink" title="2.GitLab安装"></a>2.GitLab安装</h2><h4 id="2-1-源码安装"><a href="#2-1-源码安装" class="headerlink" title="2.1.源码安装"></a>2.1.源码安装</h4><h5 id="2-1-1-安装并配置必要的依赖"><a href="#2-1-1-安装并配置必要的依赖" class="headerlink" title="2.1.1.安装并配置必要的依赖"></a>2.1.1.安装并配置必要的依赖</h5><p>在 CentOS 7（和 RedHat&#x2F;Oracle&#x2F;Scientific Linux 7）上，下面的命令也会在系统防火墙中打开 HTTP、HTTPS 和 SSH 访问。这是一个可选步骤，如果您打算仅从本地网络访问 GitLab，则可以跳过它。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y curl policycoreutils-python openssh-server perl</span><br><span class="line"># 如果未启用，则启用OpenSSH服务器守护程序：sudo systemctl status sshd</span><br><span class="line">sudo systemctl enable sshd</span><br><span class="line">sudo systemctl start sshd</span><br><span class="line"></span><br><span class="line"># 检查是否需要打开防火墙：sudo systemctl status firewalld</span><br><span class="line">sudo firewall-cmd --permanent --add-service=http</span><br><span class="line">sudo firewall-cmd --permanent --add-service=https</span><br><span class="line">sudo systemctl reload firewalld</span><br></pre></td></tr></table></figure>
+
+<p>接下来，安装 Postfix 以发送通知电子邮件。如果您想使用其他解决方案发送电子邮件，请跳过此步骤并在安装 GitLab 后<a target="_blank" rel="noopener" href="https://docs.gitlab.com/omnibus/settings/smtp.html">配置外部 SMTP 服务器</a>。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install postfix</span><br><span class="line">sudo systemctl enable postfix</span><br><span class="line">sudo systemctl start postfix</span><br></pre></td></tr></table></figure>
+
+<p>在 Postfix 安装过程中，可能会出现一个配置屏幕。选择“Internet 站点”并按 Enter。</p>
+<p>将您服务器的外部 DNS 用于“邮件名称”，然后按 Enter。如果出现其他屏幕，请继续按 Enter 接受默认值。</p>
+<h5 id="2-1-2-添加GitLab包仓库并安装包"><a href="#2-1-2-添加GitLab包仓库并安装包" class="headerlink" title="2.1.2.添加GitLab包仓库并安装包"></a>2.1.2.添加GitLab包仓库并安装包</h5><p>添加 GitLab 包存储库。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash</span><br></pre></td></tr></table></figure>
+
+<p>接下来，安装 GitLab 包。确保您已正确<a target="_blank" rel="noopener" href="https://docs.gitlab.com/omnibus/settings/dns.html">设置 DNS</a>，并更改<code>https://gitlab.example.com</code>为您要访问 GitLab 实例的 URL。安装将在该 URL 上自动配置和启动 GitLab。<br>对于<code>https://</code>URL，GitLab 将<a target="_blank" rel="noopener" href="https://docs.gitlab.com/omnibus/settings/ssl.html#lets-encrypthttpsletsencryptorg-integration">使用 Let’s Encrypt</a>自动<a target="_blank" rel="noopener" href="https://docs.gitlab.com/omnibus/settings/ssl.html#lets-encrypthttpsletsencryptorg-integration">请求证书</a>，这需要入站 HTTP 访问和<a target="_blank" rel="noopener" href="https://docs.gitlab.com/omnibus/settings/dns.html">有效的主机名</a>。您也可以<a target="_blank" rel="noopener" href="https://docs.gitlab.com/omnibus/settings/nginx.html#manually-configuring-https">使用自己的证书</a>或仅使用<code>http://</code>（不带<code>s</code>）。<br>如果您想为初始管理员用户 ( <code>root</code>)指定自定义密码，请查看<a target="_blank" rel="noopener" href="https://docs.gitlab.com/omnibus/installation/index.html#set-up-the-initial-password">文档</a>。如果未指定密码，将自动生成随机密码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo EXTERNAL_URL=&quot;https://gitlab.example.com&quot; yum install -y gitlab-ee</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-1-3-浏览到主机名并登录"><a href="#2-1-3-浏览到主机名并登录" class="headerlink" title="2.1.3.浏览到主机名并登录"></a>2.1.3.浏览到主机名并登录</h5><p>除非您在安装过程中提供了自定义密码，否则将随机生成一个密码并在<code>/etc/gitlab/initial_root_password</code>. 使用此密码和用户名<code>root</code>登录。有关<a target="_blank" rel="noopener" href="https://docs.gitlab.com/omnibus/README.html#installation-and-configuration-using-omnibus-package">安装和配置的详细说明，</a>请参阅我们的<a target="_blank" rel="noopener" href="https://docs.gitlab.com/omnibus/README.html#installation-and-configuration-using-omnibus-package">文档</a>。</p>
+<p>完成安装后，请考虑<a target="_blank" rel="noopener" href="https://docs.gitlab.com/ee/install/next_steps.html">建议的后续步骤</a>，包括身份验证选项和注册限制。</p>
+<h4 id="2-2-包安装"><a href="#2-2-包安装" class="headerlink" title="2.2.包安装"></a>2.2.包安装</h4><h5 id="2-2-1-安装并配置必要的依赖（同2-1-源码安装的2-1-1-安装并配置必要的依赖）"><a href="#2-2-1-安装并配置必要的依赖（同2-1-源码安装的2-1-1-安装并配置必要的依赖）" class="headerlink" title="2.2.1.安装并配置必要的依赖（同2.1.源码安装的2.1.1.安装并配置必要的依赖）"></a>2.2.1.安装并配置必要的依赖（同2.1.源码安装的2.1.1.安装并配置必要的依赖）</h5><h5 id="2-2-2-查看系统信息，下载对应的GitLab安装包"><a href="#2-2-2-查看系统信息，下载对应的GitLab安装包" class="headerlink" title="2.2.2.查看系统信息，下载对应的GitLab安装包"></a>2.2.2.查看系统信息，下载对应的GitLab安装包</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -a</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202108172236480.png" alt="image-20210817223621085"></p>
+<p>可以看到我这里是 Linux VM-0-14-centos 3.10.0-1160.31.1.el7.x86_64 #1 SMP Thu Jun 10 13:32:12 UTC 2021 x86_64 x86_64 x86_64 GNU&#x2F;Linux，那么就需要下载el7.x86_64.rpm的社区安装包。这里我下载了截至2021&#x2F;8&#x2F;17最新的安装包（gitlab-ce-13.12.10-ce.0.el7.x86_64.rpm）。</p>
+<p>下载包（这里推荐先本地下载，再上传服务器，下载地址：<a target="_blank" rel="noopener" href="https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/7/gitlab-ce-13.12.10-ce.0.el7.x86_64.rpm/download.rpm">下载</a>）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/el/7/gitlab-ce-13.12.10-ce.0.el7.x86_64.rpm/download.rpm</span><br></pre></td></tr></table></figure>
+
+<p>这里我是本地下载，再上传服务器的，上传的目录为（&#x2F;home&#x2F;lib）</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202108172311381.png" alt="image-20210817231129912"></p>
+<h5 id="2-2-3-安装GitLab-软件包"><a href="#2-2-3-安装GitLab-软件包" class="headerlink" title="2.2.3.安装GitLab 软件包"></a>2.2.3.安装GitLab 软件包</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -Uvh /home/libgitlab-ce-13.12.10-ce.0.el7.x86_64.rpm</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-2-4-配置域名："><a href="#2-2-4-配置域名：" class="headerlink" title="2.2.4.配置域名："></a>2.2.4.配置域名：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/gitlab/gitlab.rb</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202108172337072.png" alt="image-20210817233745549"></p>
+<p>如上图，我的域名为 <a target="_blank" rel="noopener" href="https://git.zhaifanhua.com/">https://git.zhaifanhua.com</a> </p>
+<h4 id="配置生效"><a href="#配置生效" class="headerlink" title="配置生效"></a>配置生效</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 使配置生效</span><br><span class="line">sudo gitlab-ctl reconfigure</span><br><span class="line"># 重新启动服务</span><br><span class="line">sudo gitlab-ctl restart</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-外部Nginx反向代理Gitlab内部Nginx"><a href="#3-外部Nginx反向代理Gitlab内部Nginx" class="headerlink" title="3.外部Nginx反向代理Gitlab内部Nginx"></a>3.外部Nginx反向代理Gitlab内部Nginx</h2><p>由于Gitlab在安装的时候内部集成了Nginx，一般情况下，采用外部Nginx反向代理的思路来统一管理。</p>
+<h3 id="编辑gitlab配置文件"><a href="#编辑gitlab配置文件" class="headerlink" title="编辑gitlab配置文件"></a>编辑gitlab配置文件</h3><ul>
+<li>1、让gitlab的内置nginx监听7000端口</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/gitlab/gitlab.rb</span><br><span class="line">nginx[&#x27;listen_port&#x27;] = 7000</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>2、 设置gitlab的访问路径（是通过外部nginx反向代理访问的）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">external_url &#x27;http://域名/gitlab&#x27;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>3、 让配置生效</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl reconfigure</span><br><span class="line">gitlab-ctl restart</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置外部nginx"><a href="#配置外部nginx" class="headerlink" title="配置外部nginx"></a>配置外部nginx</h3><ul>
+<li>1、编辑nginx配置文件</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/nginx/nginx.conf</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">http &#123;</span><br><span class="line">    ...</span><br><span class="line">   server &#123;</span><br><span class="line">        listen 80;</span><br><span class="line">        server_name 192.168.3.101;</span><br><span class="line">        charset utf-8;</span><br><span class="line">        add_header Strict-Transport-Security &quot;max-age=63072000&quot; always;</span><br><span class="line">        #-------------代码------------------</span><br><span class="line">        location /gitlab &#123;</span><br><span class="line">            # 设置最大允许上传单个的文件大小</span><br><span class="line">            client_max_body_size 1024m;</span><br><span class="line">            proxy_redirect off;</span><br><span class="line">            proxy_set_header Host $host;</span><br><span class="line">            proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">            # 反向代理到 gitlab 内置的 nginx</span><br><span class="line">            proxy_pass  http://127.0.0.1:7000;</span><br><span class="line">            index index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>2、重启nginx</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 检测配置是否正确</span><br><span class="line">nginx -t</span><br><span class="line">  </span><br><span class="line"># 重启nginx</span><br><span class="line">nginx -s reload  # or service nginx restart</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-GitLab管理常用命令"><a href="#4-GitLab管理常用命令" class="headerlink" title="4.GitLab管理常用命令"></a>4.GitLab管理常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 禁止 Gitlab 开机自启动</span></span><br><span class="line">systemctl <span class="built_in">disable</span> gitlab-runsvdir.service</span><br><span class="line"><span class="comment"># 启用 Gitlab 开机自启动</span></span><br><span class="line">systemctl <span class="built_in">enable</span> gitlab-runsvdir.service</span><br><span class="line"></span><br><span class="line">gitlab-ctl start    <span class="comment"># 启动所有 gitlab 组件；</span></span><br><span class="line">gitlab-ctl stop        <span class="comment"># 停止所有 gitlab 组件；</span></span><br><span class="line">gitlab-ctl restart        <span class="comment"># 重启所有 gitlab 组件；</span></span><br><span class="line">gitlab-ctl status        <span class="comment"># 查看服务状态；</span></span><br><span class="line">vim /etc/gitlab/gitlab.rb        <span class="comment"># 修改gitlab配置文件；</span></span><br><span class="line">gitlab-ctl reconfigure        <span class="comment"># 重新编译gitlab的配置；</span></span><br><span class="line">gitlab-rake gitlab:check SANITIZE=<span class="literal">true</span> --trace    <span class="comment"># 检查gitlab；</span></span><br><span class="line">gitlab-ctl <span class="built_in">tail</span>        <span class="comment"># 查看日志；</span></span><br><span class="line">gitlab-ctl <span class="built_in">tail</span> nginx/gitlab_access.log</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.zhaifanhua.com">摘繁华</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.zhaifanhua.com/2021/08/18/99467d836556/">https://blog.zhaifanhua.com/2021/08/18/99467d836556/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.zhaifanhua.com" target="_blank">摘繁华博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/GitLab/">GitLab</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.zhaifanhua.com/blog/img/202108172337072.png" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/static/img/main/pay/qq.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/static/img/main/pay/qq.png" alt="qq"/></a><div class="post-qr-code-desc">qq</div></li><li class="reward-item"><a href="/static/img/main/pay/wechat.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/static/img/main/pay/wechat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/static/img/main/pay/alipay.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/static/img/main/pay/alipay.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/08/12/bdc030f44548/" title="最喜欢的一篇散文"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/static/img/banner/defult.jpg" onerror="onerror=null;src='/static/img/loading.gif'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">最喜欢的一篇散文</div></div></a></div><div class="next-post pull-right"><a href="/2021/08/25/b8dcb6cb1c90/" title="Cloudreve的搭建"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.zhaifanhua.com/blog/img/202108181552967.png" onerror="onerror=null;src='/static/img/loading.gif'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Cloudreve的搭建</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-GitLab%E4%BB%8B%E7%BB%8D"><span class="toc-text">1.GitLab介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-GitLab%EF%BC%9A"><span class="toc-text">1.1.GitLab：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-Gitlab%E7%9A%84%E6%9C%8D%E5%8A%A1%E6%9E%84%E6%88%90%EF%BC%9A"><span class="toc-text">1.2.Gitlab的服务构成：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-GitLab%E5%AE%89%E8%A3%85"><span class="toc-text">2.GitLab安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85"><span class="toc-text">2.1.源码安装</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-1-%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%BF%85%E8%A6%81%E7%9A%84%E4%BE%9D%E8%B5%96"><span class="toc-text">2.1.1.安装并配置必要的依赖</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-2-%E6%B7%BB%E5%8A%A0GitLab%E5%8C%85%E4%BB%93%E5%BA%93%E5%B9%B6%E5%AE%89%E8%A3%85%E5%8C%85"><span class="toc-text">2.1.2.添加GitLab包仓库并安装包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-3-%E6%B5%8F%E8%A7%88%E5%88%B0%E4%B8%BB%E6%9C%BA%E5%90%8D%E5%B9%B6%E7%99%BB%E5%BD%95"><span class="toc-text">2.1.3.浏览到主机名并登录</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E5%8C%85%E5%AE%89%E8%A3%85"><span class="toc-text">2.2.包安装</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-1-%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%BF%85%E8%A6%81%E7%9A%84%E4%BE%9D%E8%B5%96%EF%BC%88%E5%90%8C2-1-%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85%E7%9A%842-1-1-%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AE%E5%BF%85%E8%A6%81%E7%9A%84%E4%BE%9D%E8%B5%96%EF%BC%89"><span class="toc-text">2.2.1.安装并配置必要的依赖（同2.1.源码安装的2.1.1.安装并配置必要的依赖）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-2-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF%EF%BC%8C%E4%B8%8B%E8%BD%BD%E5%AF%B9%E5%BA%94%E7%9A%84GitLab%E5%AE%89%E8%A3%85%E5%8C%85"><span class="toc-text">2.2.2.查看系统信息，下载对应的GitLab安装包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-3-%E5%AE%89%E8%A3%85GitLab-%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="toc-text">2.2.3.安装GitLab 软件包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-4-%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%EF%BC%9A"><span class="toc-text">2.2.4.配置域名：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%94%9F%E6%95%88"><span class="toc-text">配置生效</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%A4%96%E9%83%A8Nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86Gitlab%E5%86%85%E9%83%A8Nginx"><span class="toc-text">3.外部Nginx反向代理Gitlab内部Nginx</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%BE%91gitlab%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">编辑gitlab配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%A4%96%E9%83%A8nginx"><span class="toc-text">配置外部nginx</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-GitLab%E7%AE%A1%E7%90%86%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">4.GitLab管理常用命令</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2016 - 2023 By 摘繁华</div><div class="footer_custom_text"><a href="/sitemap.xml">网站地图</a><span>|</span><a href="/baidusitemap.xml">百度网站地图</a><span>|</span><a target="_blank" rel="noopener" href="https://comment.blog.zhaifanhua.com">评论管理</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? '' : ''
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'hQY3X0Ik2ttryFeUGIkNjwLx-gzGzoHsz',
+      appKey: 'jMrMqV3NplwCUmFopw1S2VAU',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !true) {
+    if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><meting-js server="netease" type="playlist" id="6882882037" fixed="true" autoplay="true" loop="all" order="random" preload="auto"> </meting-js><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

@@ -1,7 +1,7 @@
 ---
 title: Vue学习笔记4-项目开发规范及插件
-date: 2022-08-18 01:57:15
-updated: 2022-08-18 02:13:58
+date: 2023-08-18 01:57:15
+updated: 2023-08-18 02:13:58
 description: 这里对开发规范的配置仅配置ESLint，对代码格式的配置仅配置Prettier，用于代码格式化。
 keywords: Vue，前端,学习
 cover: https://cdn.zhaifanhua.com/blog/img/202209160000048.png

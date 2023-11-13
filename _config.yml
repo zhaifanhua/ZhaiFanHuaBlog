@@ -142,3 +142,11 @@ feed:
   order_by: -date
   autodiscovery: true
 # ----------------------------------插件end----------------------------------------
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repo: https://github.com/zhaifanhua/ZhaiFanhuaBlog.git
+  branch: pages
+  message: 'web updata: {{now("YYYY-MM-DD HH/mm/ss")}}'

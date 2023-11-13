@@ -1,0 +1,51 @@
+- class_name: 遂启其匣
+  class_desc: 我的其他站点
+  link_list:
+    - name: 摘繁华官方主页
+      descr: 白衣无尘，亦如初见。
+      link: https://www.zhaifanhua.com
+      avatar: https://cdn.zhaifanhua.com/www/img/avatar/zhaifanhua.png
+    - name: 摘繁华私有云盘
+      descr: 我用于存放资料的私有云盘。
+      link: https://yun.zhaifanhua.com
+      avatar: https://cdn.zhaifanhua.com/www/img/avatar/zhaifanhua.png
+
+- class_name: 芝兰之交
+  class_desc: 可正常访问友链
+  link_list:
+    - name: Krryblog
+      descr: 你的美好，我都记得
+      link: https://ainyi.com
+      avatar: https://gravatar.loli.net/avatar/501db21843ff7e879f1b361ed71ccdf1
+    - name: 蓝白社区
+      descr: 致力于 IT 技术分享
+      link: https://blog.bglb.work
+      avatar: https://blog.bglb.work/static/img/logo_font.png
+    - name: 旧时繁华
+      descr: 繁华似锦觅安宁,淡云流水度此生
+      link: https://blog.rain888.cn
+      avatar: https://zzwyun.gitee.io/static/img/jiushi.png
+    - name: 韩小韩博客
+      descr: 要变得更加完美
+      link: https://www.vvhan.com
+      avatar: https://www.vvhan.com/HanLogo.png
+    - name: 山河
+      descr: 你喜欢我吗
+      link: https://sang.pub
+      avatar: https://cdn.jsdelivr.net/gh/mydracula/image@master/20210330/fb345fa732f23f3fe9f1fd962168f24f.jpg
+    - name: 松岛川树
+      descr: 许多人来来去去，相聚又别离
+      link: https://www.cnblogs.com/songdaochuanshu
+      avatar: https://avatars.githubusercontent.com/u/81367559?v=4
+    - name: LOGI
+      descr: 会点代码的强迫症
+      link: https://logi.im
+      avatar: https://code.bdstatic.com/npm/logicdn@1.0.0/logi.im/usr/images/global/logo.webp
+    - name: 黄阿信的个人博客
+      descr: 要么改变世界，要么适应世界
+      link: https://www.yalexin.top/blog
+      avatar: https://qiniu.yalexin.top/cat_mouse.jpg
+    - name: 郝宇博客
+      descr: 记录我的成长和青春
+      link: http://liis.cc
+      avatar: http://liis.cc/hy.png
